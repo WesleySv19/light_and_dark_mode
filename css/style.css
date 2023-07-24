@@ -21,7 +21,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-.bi-moon {
+.bi-sun {
   display: none;
 }
 
@@ -48,6 +48,12 @@ main {
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
+.card_image, 
+.card_details {
+  padding: 2rem;
+  width: 50%;
+}
+
 .card_image {
   padding: 2rem;
   width: 50%;
@@ -57,7 +63,7 @@ main {
 
 .card_image span {
   font-size: 6rem;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .card img {
@@ -68,6 +74,42 @@ main {
   top: 10rem;
 }
 
+.card_details h2{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.description {
+  line-height: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.price_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.btn {
+  background-color: #444;
+  width: 7rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 /* Dark theme */
 .dark,
 .dark header {
@@ -76,5 +118,29 @@ main {
 }
 
 .dark .bi-moon {
+  display: none;
+}
+
+.dark .bi-sun {
   display: block;
+}
+
+.dark .card {
+  background-color: #37474f;
+}
+
+.dark .card_image {
+  background-color: #273035;
+}
+
+.dark .subtitle {
+  color: #67b4f3;
+}
+
+.dark .description {
+  color: #2196f3;
+}
+
+.dark .btn {
+  background-color: #67b4f3;
 }
